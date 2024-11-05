@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Result</title>
+</head>
+<body>
+    <h1>Analysis Result</h1>
+    <p>Predicted Class: {{ result }}</p>
+    <p>Confidence: {{ confidence|round(2) }}%</p>
+
+
+    <h2>Original Image</h2>
+    <img src="{{ filename }}" alt="Uploaded Image" style="max-width: 300px;">
+    <h2>Grad-CAM Visualization</h2>
+    <img src="{{ grad_cam_image }}" alt="Grad-CAM Image" style="max-width: 300px;">
+    <a href="/">Back to upload</a>
+</body>
+</html>
+
+
+
+
+
+
+
